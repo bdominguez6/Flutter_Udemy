@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
+/// This class contains all the main screen
 /// Class with screen change method passed by parameter (this will be executed when we press the button below the image)
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
-
+  // method that executes the method that changes to 'QuestionScreen'
   final void Function() startQuiz;
 
   @override
@@ -21,8 +22,7 @@ class StartScreen extends StatelessWidget {
           //   opacity: 0.6,
           //   child: Image.asset('assets/images/quiz-logo.png', width: 300),
           // ),
-          const SizedBox(
-              height: 40), // Puedes ajustar el valor según tus necesidades
+          const SizedBox(height: 40),
           const Text(
             "Learn Flutter the fun way!",
             style: TextStyle(
