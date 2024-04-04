@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 /// This class contains all the main screen
 /// Class with screen change method passed by parameter (this will be executed when we press the button below the image)
@@ -16,16 +17,16 @@ class StartScreen extends StatelessWidget {
           Image.asset(
             'assets/images/quiz-logo.png',
             width: 300,
-            color: const Color.fromARGB(150, 255, 255, 255),
+            color: Color.fromARGB(114, 255, 255, 255),
           ),
           // Opacity(
           //   opacity: 0.6,
           //   child: Image.asset('assets/images/quiz-logo.png', width: 300),
           // ),
           const SizedBox(height: 40),
-          const Text(
+          Text(
             "Learn Flutter the fun way!",
-            style: TextStyle(
+            style: GoogleFonts.lato(
               color: Colors.white,
               fontSize: 24,
             ),
